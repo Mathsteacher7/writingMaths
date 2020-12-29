@@ -49,6 +49,13 @@ const Home = () => {
           <Mathjax.Node inline>{math}</Mathjax.Node>
         </div>
       </Mathjax.Context>
+      <br/>
+      <Mathjax.Context input="tex">
+        <div>
+          This is an inline formula written in AsciiMath:{" "}
+          <Mathjax.Node inline>{math}</Mathjax.Node>
+        </div>
+      </Mathjax.Context>
     </section>
   );
 };
