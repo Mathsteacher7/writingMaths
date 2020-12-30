@@ -9,6 +9,7 @@ const array = "\\begin{array}{cc} a & b \\\\ c & d \\end{array}";
 const math = "\\frac{1}{\\sqrt{x^2 + 1}}";
 const det = "x_{1,2}=\\frac{b\\pm\\sqrt{b^2-4ac}}{2}";
 const dividing = "\\frac{1}{2}";
+const equations = ["x+4=2", "3x=9", "2x-5=x+4"];
 
 const Home = () => {
   return (
@@ -74,10 +75,16 @@ const Home = () => {
       <br />
       <Mathjax.Context input="tex">
         <div>
-          find x if we know that{" "}
-          <Mathjax.Node>
-            {dividing}
-          </Mathjax.Node>
+          find x if we know that <Mathjax.Node>{dividing}</Mathjax.Node>
+        </div>
+      </Mathjax.Context>
+      <br />
+      <Mathjax.Context input="tex">
+        <div>
+          solve the equations:
+          {equations.map((equation) => {
+            return <Mathjax.Node>{equation}</Mathjax.Node>;
+          })}
         </div>
       </Mathjax.Context>
     </section>
