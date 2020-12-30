@@ -1,50 +1,59 @@
 .home {
-    img {
-        width: 70%;
-        height: 70%;
-    }
+  img {
+    width: 70%;
+    height: 70%;
+  }
 }
-.addingUpToTen, .roundingToSF {
-    img {
-        width: 20px;
-        height: 20px;
+.addingUpToTen,
+.roundingToSF {
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  .oneLine {
+    display: flex;
+
+    .exercise {
+      margin-bottom: 5px;
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      .theExercise {
+        width: 60px;
+      }
     }
-    .oneLine{
-        display: flex;
-        
-        .exercise{
-            margin-bottom: 5px;
-            width: 200px;
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            .theExercise{
-                width: 60px;
-            }
-        }
-        .longExercise{
-            margin-bottom: 5px;
-            width: 250px;
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            .theExercise{
-                width: 110px;
-            }
-        }
-        .input {
-            width: 80px;
-            height: 30px;
-        }
-        .rightOrWrong{
-            margin-top: 5px;
-            margin-left: 10px;
-        }
+    .longExercise {
+      margin-bottom: 5px;
+      width: 250px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      .theExercise {
+        width: 110px;
+      }
     }
+    .input {
+      width: 80px;
+      height: 30px;
+    }
+    .rightOrWrong {
+      margin-top: 5px;
+      margin-left: 10px;
+    }
+  }
 }
 
-button{
-    margin-right: 15px;
-    margin-top: 15px;
+button {
+  margin-right: 15px;
+  margin-top: 15px;
 }
 
+.MJXp-display {
+  &.MJXp-math {
+    text-align: left;
+    .MJXp-mfrac {
+      padding-left: 10px;
+    }
+  }
+}
